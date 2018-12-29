@@ -15,8 +15,7 @@
 		5D12E00621D7048200B76D6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D12E00521D7048200B76D6F /* main.m */; };
 		5D12E01021D7048200B76D6F /* WKQueryDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D12E00F21D7048200B76D6F /* WKQueryDemoTests.m */; };
 		5D12E01B21D7048200B76D6F /* WKQueryDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D12E01A21D7048200B76D6F /* WKQueryDemoUITests.m */; };
-		5D12E04F21D7053300B76D6F /* Query.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D12E04D21D7053300B76D6F /* Query.m */; };
-		5D12E05021D7053300B76D6F /* Query+Field.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D12E04E21D7053300B76D6F /* Query+Field.m */; };
+		C83FA4823ADDA10B42DDAA0C /* libPods-WKQueryDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7747D70EBA9D4E6E08103C76 /* libPods-WKQueryDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +52,9 @@
 		5D12E01621D7048200B76D6F /* WKQueryDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKQueryDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D12E01A21D7048200B76D6F /* WKQueryDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKQueryDemoUITests.m; sourceTree = "<group>"; };
 		5D12E01C21D7048200B76D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D12E04A21D7053300B76D6F /* WKQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKQuery.h; sourceTree = "<group>"; };
-		5D12E04B21D7053300B76D6F /* Query+Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Query+Field.h"; sourceTree = "<group>"; };
-		5D12E04C21D7053300B76D6F /* Query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Query.h; sourceTree = "<group>"; };
-		5D12E04D21D7053300B76D6F /* Query.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Query.m; sourceTree = "<group>"; };
-		5D12E04E21D7053300B76D6F /* Query+Field.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Query+Field.m"; sourceTree = "<group>"; };
+		7747D70EBA9D4E6E08103C76 /* libPods-WKQueryDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WKQueryDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		894383F20A1C0D7C55021ED9 /* Pods-WKQueryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKQueryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WKQueryDemo/Pods-WKQueryDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		ADF6145AD7F6A2C036F410B5 /* Pods-WKQueryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKQueryDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WKQueryDemo/Pods-WKQueryDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83FA4823ADDA10B42DDAA0C /* libPods-WKQueryDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3767EF747F55D8D51E6CF63C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				894383F20A1C0D7C55021ED9 /* Pods-WKQueryDemo.debug.xcconfig */,
+				ADF6145AD7F6A2C036F410B5 /* Pods-WKQueryDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5D12DFEA21D7048100B76D6F = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +99,8 @@
 				5D12E00E21D7048200B76D6F /* WKQueryDemoTests */,
 				5D12E01921D7048200B76D6F /* WKQueryDemoUITests */,
 				5D12DFF421D7048100B76D6F /* Products */,
+				3767EF747F55D8D51E6CF63C /* Pods */,
+				6ED6EE46C8688AA3BA45EBE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,7 +121,6 @@
 				5D12DFF721D7048100B76D6F /* AppDelegate.m */,
 				5D12DFF921D7048100B76D6F /* ViewController.h */,
 				5D12DFFA21D7048100B76D6F /* ViewController.m */,
-				5D12E04921D7053300B76D6F /* WKQuery */,
 				5D12DFFC21D7048100B76D6F /* Main.storyboard */,
 				5D12DFFF21D7048200B76D6F /* Assets.xcassets */,
 				5D12E00121D7048200B76D6F /* LaunchScreen.storyboard */,
@@ -140,16 +148,12 @@
 			path = WKQueryDemoUITests;
 			sourceTree = "<group>";
 		};
-		5D12E04921D7053300B76D6F /* WKQuery */ = {
+		6ED6EE46C8688AA3BA45EBE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D12E04C21D7053300B76D6F /* Query.h */,
-				5D12E04D21D7053300B76D6F /* Query.m */,
-				5D12E04B21D7053300B76D6F /* Query+Field.h */,
-				5D12E04E21D7053300B76D6F /* Query+Field.m */,
-				5D12E04A21D7053300B76D6F /* WKQuery.h */,
+				7747D70EBA9D4E6E08103C76 /* libPods-WKQueryDemo.a */,
 			);
-			path = WKQuery;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D12E01F21D7048200B76D6F /* Build configuration list for PBXNativeTarget "WKQueryDemo" */;
 			buildPhases = (
+				F9F8325CFD0CD99C655ACB46 /* [CP] Check Pods Manifest.lock */,
 				5D12DFEF21D7048100B76D6F /* Sources */,
 				5D12DFF021D7048100B76D6F /* Frameworks */,
 				5D12DFF121D7048100B76D6F /* Resources */,
+				8631B97B64FC8E95A09867CD /* [CP] Embed Pods Frameworks */,
+				133C9C930D86B91184D4E2BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,16 +284,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		133C9C930D86B91184D4E2BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKQueryDemo/Pods-WKQueryDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8631B97B64FC8E95A09867CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKQueryDemo/Pods-WKQueryDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F8325CFD0CD99C655ACB46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WKQueryDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D12DFEF21D7048100B76D6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D12E04F21D7053300B76D6F /* Query.m in Sources */,
 				5D12DFFB21D7048100B76D6F /* ViewController.m in Sources */,
 				5D12E00621D7048200B76D6F /* main.m in Sources */,
 				5D12DFF821D7048100B76D6F /* AppDelegate.m in Sources */,
-				5D12E05021D7053300B76D6F /* Query+Field.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,11 +511,15 @@
 		};
 		5D12E02021D7048200B76D6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 894383F20A1C0D7C55021ED9 /* Pods-WKQueryDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMAS2NN4BB;
 				INFOPLIST_FILE = WKQueryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,11 +532,15 @@
 		};
 		5D12E02121D7048200B76D6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF6145AD7F6A2C036F410B5 /* Pods-WKQueryDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMAS2NN4BB;
 				INFOPLIST_FILE = WKQueryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

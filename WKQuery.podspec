@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/ZhangDo/WKQuery.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/NAME'
  
-  s.platform     = :ios, '4.3'
-  # s.ios.deployment_target = '5.0'
+  #s.platform     = :ios, '8.0'
+  s.ios.deployment_target = '8.0'
   # s.osx.deployment_target = '10.7'
   s.requires_arc = true
  

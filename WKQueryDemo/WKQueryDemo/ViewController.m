@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    /*查询*/
+//    /*查询*/
     QUERY.create(@"",@{}).where(@"").equal(@(1),YES).w_and(@"").equal(@"",YES).length(-1).client(12);
     /*更新*/
     QUERY.create(@"",@{}).where(@"pk").equal(@{},YES).upsert(@"").setValue(@"").client(12);
