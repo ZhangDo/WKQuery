@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "WKQuery"
-  s.version          = "1.0.0"
+  s.version          = "1.2.0"
   s.summary          = "A lib used on iOS."
   s.description      = <<-DESC
                        It is a lib used on iOS, which implement by Objective-C.

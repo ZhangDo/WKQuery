@@ -54,6 +54,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (Query * (^)(id objVal, NSInteger flag))like;
 
+/***设置查询条件**/
+- (Query * (^)(NSInteger sort))sort;
+
 /**
  <#Description#>
  */

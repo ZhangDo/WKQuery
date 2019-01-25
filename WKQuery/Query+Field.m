@@ -148,6 +148,20 @@ static char *filterDicKey    = "filterDicKey";
     };
 }
 
+/***设置查询条件**/
+- (Query * (^)(NSInteger sort))sort {
+    WK_weak_Self;
+    return ^Query*(NSInteger sort) {
+        WK_strong_Self;
+        strongSelf.sorting = @(sort);
+        [strongSelf setFilter];
+        [strongSelf.filterDic removeObjectsForKeys:@[@"expr",@"objVal"]];
+        [strongSelf.filter addObject:self.filterDic];
+        [strongSelf.queryDic setObject:self.filter forKey:@"filters"];
+        return self;
+    };
+}
+
 - (Query * (^)(void))isNull {
     WK_weak_Self;
     return ^Query*() {
